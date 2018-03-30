@@ -1,7 +1,7 @@
 // Declarando as dependencias
-let express = require("express");
-let app = express();
-let bodyParser = require("body-parser");
+const express = require("express");
+const app = express();
+const bodyParser = require("body-parser");
 
 //setup do bodyParser
 app.use(bodyParser.urlencoded({
@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({
 app.set("view engine", "ejs");
 
 // array inicial de amigos
-let friends = ["Leonardo", "Mateus", "Matheus", "Wilson", "João"];
+const friends = ["Leonardo", "Mateus", "Matheus", "Wilson", "João"];
 
 // rota da home page
 app.get("/", (req, res) => {
