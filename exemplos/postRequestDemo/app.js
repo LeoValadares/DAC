@@ -15,12 +15,12 @@ app.set("view engine", "ejs");
 let friends = ["Leonardo", "Mateus", "Matheus", "Wilson", "João"];
 
 // rota da home page
-app.get("/", function(req, res) {
+app.get("/", (req, res) => {
   res.render("home");
 });
 
 //rota POST de quando um novo amigo é adicionado via formulário
-app.post("/addfriend", function(req, res) {
+app.post("/friends", (req, res) => {
   let newFriend = req.body.newfriend;
   friends.push(newFriend);
   res.redirect("/friends");
@@ -28,7 +28,7 @@ app.post("/addfriend", function(req, res) {
 
 //rota para lista de amigos + formulário
 //localhost:8080/friends no browser
-app.get("/friends", function(req, res) {
+app.get("/friends", (req, res) => {
   res.render("friends", {
     friends: friends
   });
@@ -36,6 +36,4 @@ app.get("/friends", function(req, res) {
 
 //server para rodarmos com node app.js
 //localhost:8080 no browser
-app.listen(8080, function() {
-  console.log("Server started!!!")
-})
+app.listen(8080, () => console.log("Server started!!!"))

@@ -1,11 +1,11 @@
 <h1>Friends list goes here</h1>
 <!-- li sendo criado via EJS -->
-<% friends.forEach(function(friend){ %>
+<% friends.forEach(friend => { %>
   <li><%= friend %></li>
 <% }); %>
 
 <!-- formulário arroz com feijão para adicionar amigo -->
-<form class="" action="/addfriend" method="post">
+<form class="" action="/friends" method="post">
   <input type="text" name = "newfriend" placeholder="name">
   <button type="submit">I made a new friend!</button>
 
