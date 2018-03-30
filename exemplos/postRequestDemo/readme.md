@@ -7,8 +7,8 @@ Exemplo feito para mostrar:
 * uso de EJS (igualzinho JSP) como view engine, tendo como diretório padrão a pasta VIEW
 
 Comandos para rodar (terminal aberto na pasta do exemplo):
-npm install
-node app.js
+* npm install
+* node app.js
 
 Dai é só abrir no localhost:8080 no seu browser
 
