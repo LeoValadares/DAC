@@ -1,0 +1,9 @@
+<h1>Lembretes para usuário {{usuario}}</h1>
+<!-- li sendo criado via EJS -->
+<ul>
+  {{#each lembretes}}
+  <li>{{this}}</li>
+  {{else}}
+  <li>Usuário inexistente ou sem lembretes</li>
+  {{/each}}
+</ul>

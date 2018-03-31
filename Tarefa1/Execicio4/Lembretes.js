@@ -1,3 +1,5 @@
+//Arquivo análogo ao bean de Lembretes do servlet
+//array fica em memória n necessitando salvar na session
 let lembretes = {};
 
 const adicionarLembrete = (usuario, lembrete) => {
