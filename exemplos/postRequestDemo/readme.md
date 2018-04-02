@@ -8,7 +8,7 @@ Exemplo feito para mostrar:
 
 Comandos para rodar (terminal aberto na pasta do exemplo):
 * npm install
-* node app.js
+* node index.js
 
 Dai é só abrir no localhost:8080 no seu browser
 
