@@ -6,14 +6,9 @@ const exphbs = require("express-handlebars");
 app.engine('handlebars', exphbs());
 app.set("view engine", "handlebars");
 
+const mostraHeader = require("./MostraHeader")
+
 //Configuração de rotas
-app.get("/tarefa1/mostraheader", (req, res) => {
-    //pegando os headers com req.headers
-    headers = req.headers;
-    //renderizando com handlebars passando o objeto headers como parametro
-    res.render("MostraHeader", {
-        headers: headers
-    });
-});
+app.get("/tarefa1/mostraheader", mostraHeader);
 
 app.listen(8080, () => console.log("Server started!!!"));
